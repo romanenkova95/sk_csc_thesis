@@ -1,0 +1,68 @@
+%%% Author information %%%
+\newcommand{\thesisAuthorLastName}{\fixme{Lastname}}
+\newcommand{\thesisAuthorOtherNames}{\fixme{Name Patronymic}}
+\newcommand{\thesisAuthor}             %Author's full name
+{%
+	\texorpdfstring{% \texorpdfstring takes two arguments and uses the first for (La)TeX and the second for pdf
+		\thesisAuthorLastName~\thesisAuthorOtherNames% this will be displayed on the title page or in the text where the variable will be used
+	}{%
+		\thesisAuthorLastName, \thesisAuthorOtherNames% this entry is for the properties of the pdf file. If the pdf is processed by programs for collecting bibliographic information, the surname will be correctly presented.
+	}
+}
+%%% Thesis information %%%
+\newcommand{\thesisTitle}              % Thesis title
+{\fixme{Your thesis title}}
+\newcommand{\thesisSpecialtyNumber}    % Thesis, Specialty number (from VAK), for example 1.2.1.
+{\fixme{\textbf{1.2.1. }}}
+\newcommand{\thesisSpecialtyTitle}     %Thesis, Specialty (from VAK) 
+{\fixme{Artificial intelligence and machine learning}}
+\newcommand{\thesisDegree}             % Thesis degree
+{Doctor of Philosophy in \fixme{Physics and Mathematics}}
+\newcommand{\thesisCity}               % Thesis, city of dissertation writing
+{Moscow}
+\newcommand{\thesisYear}               % Thesis, year of dissertation writing
+{\fixme{\the\year}}
+%TODO: check that the name of organization is correct
+\newcommand{\thesisOrganization}       % Thesis, organization
+{Autonomous Non-Profit Organization for Higher Education ``Skolkovo Institute of Science and Technology''}
+
+\newcommand{\thesisInOrganization}     % Thesis, organization in prepositional case
+{Autonomous Non-Profit Organization for Higher Education ``Skolkovo Institute of Science and Technology''}
+
+%%% Supervisor information %%%
+%% \newcommand{\supervisorDead}{}           % Draw a frame around the supervisor name
+\newcommand{\supervisorFio}              % Supervisor, full name
+{\fixme{Lastname Name Patronymic}}
+\newcommand{\supervisorRegalia}          % Supervisor regalia
+{\fixme{academic degree, academic rank}}
+
+%% \newcommand{\supervisorTwoDead}{}        % Draw a frame around the second supervisor name
+%% \newcommand{\supervisorTwoFio}           % Second supervisor (if available), full name
+%% {\fixme{Lastname Name Patronymic}}
+%% \newcommand{\supervisorTwoRegalia}       % Second supervisor (if available), regalia
+%% {\fixme{academic degree, academic rank}}
+
+%%% Defense information %%%
+\newcommand{\defenseDate}              % Defense date
+{\fixme{\ul{\textbf{DD Month Year~at~XX:XX p.m.}}}}
+\newcommand{\defenseCouncilNumber}     % Dissertation council number
+{\fixme{\textbf{X.X.X.X.}}}
+\newcommand{\defenseCouncilTitle}      % Organization of the dissertation council
+{Skolkovo Institute of Science and Technology (Skoltech)}
+\newcommand{\defenseCouncilAddress}    % Защита, адрес учреждение диссертационного совета
+{Skolkovo Institute of Science and Technology, the territory of the Innovation Center ``Skolkovo'', Bolshoy Boulevard, 30, bld.1, Moscow 121205, Russia}
+
+\newcommand{\defenseSecretaryFio}      % Secretary of the dissertation council, full name
+{\fixme{Kopelevich Grigory Alexandrovich}}
+\newcommand{\defenseSecretaryRegalia}  % Secretary of the dissertation council, regalia
+{\fixme{Candidate of Physical and Mathematical Sciences}}       
+
+%%% Synopsis (abstract) extra information %%%
+\newcommand{\synopsisLibrary}          % Synopsis, library name
+{\fixme{Название библиотеки}}
+\newcommand{\synopsisDate}             % Synopsis, mailing date
+{<<\underline{\hspace{1cm}}>>\underline{\hspace{3cm}}\fixme{\the\year~.}}
+
+% To avoid conflict with beamer class use \providecommand
+\providecommand{\keywords}%            % Keywords for dissertation and synopsis PDF metadata
+{}

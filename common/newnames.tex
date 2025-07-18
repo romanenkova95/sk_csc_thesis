@@ -1,0 +1,67 @@
+% Новые переменные, которые могут использоваться во всём проекте
+% ГОСТ 7.0.11-2011
+% 9.2 Оформление текста автореферата диссертации
+% 9.2.1 Общая характеристика работы включает в себя следующие основные структурные
+% элементы:
+% актуальность темы исследования;
+%TODO: при защите на русском языке, раскомментируйте соответствующие варианты
+%\newcommand{\actualityTXT}{Актуальность темы исследования.}
+\newcommand{\actualityTXT}{Relevance of the work.}
+% степень ее разработанности;
+%\newcommand{\progressTXT}{Степень разработанности темы.}
+\newcommand{\progressTXT}{The degree of topic development.}
+% цели и задачи;
+%\newcommand{\aimTXT}{Цели научной работы}
+% \newcommand{\tasksTXT}{Задачи научной работы}
+\newcommand{\aimTXT}{The aim of the work}
+\newcommand{\tasksTXT}{problems} % like the following problems are addressed
+% научную новизну;
+%\newcommand{\noveltyTXT}{Научная новизна.}
+\newcommand{\noveltyTXT}{Scientific novelty.}
+% теоретическую и практическую значимость работы;
+%\newcommand{\influenceTXT}{Теоретическая и практическая значимость}
+\newcommand{\influenceTXT}{Theoretical and practical significance.}
+% или чаще используют просто
+% методологию и методы исследования;
+%\newcommand{\methodsTXT}{Методология и методы исследования.}
+\newcommand{\methodsTXT}{Methodology and research methods.}
+% положения, выносимые на защиту;
+%\newcommand{\defpositionsTXT}{Положения, выносимые на защиту:}
+\newcommand{\defpositionsTXT}{Propositions submitted for the defense:}
+% or alternative version
+%\newcommand{\defpositionsTXT}{Main results submitted for the defensе:}  
+% степень достоверности и апробацию результатов.
+%\newcommand{\reliabilityTXT}{Степень достоверности полученных результатов}
+\newcommand{\reliabilityTXT}{Validity of the obtained results}
+%\newcommand{\probationTXT}{Апробация результатов.}
+\newcommand{\probationTXT}{Approbation of the results.}
+
+%\newcommand{\contributionTXT}{Персональный вклад автора.}
+\newcommand{\contributionTXT}{Personal contribution of the author.}
+
+%\newcommand{\publicationsTXT}{Публикации по теме диссертации.}
+\newcommand{\publicationsTXT}{Publications.}
+
+
+% Автогенерация библиографии работает как-то косячно, поэтому местами я просто руками прописала
+%%% Заголовки библиографии:
+
+% для автореферата:
+%\newcommand{\bibtitleauthor}{Публикации автора по теме диссертации}
+\newcommand{\bibtitleauthor}{Publications of the Author on the Subject of the Dissertation}
+
+% для стиля библиографии `\insertbiblioauthorgrouped`
+\newcommand{\bibtitleauthorvak}{В изданиях из списка ВАК РФ}
+\newcommand{\bibtitleauthorscopus}{В изданиях, входящих в международную базу цитирования Scopus}
+\newcommand{\bibtitleauthorwos}{В изданиях, входящих в международную базу цитирования Web of Science}
+\newcommand{\bibtitleauthorother}{В прочих изданиях}
+\newcommand{\bibtitleauthorconf}{В сборниках трудов конференций}
+\newcommand{\bibtitleauthorpatent}{Зарегистрированные патенты}
+\newcommand{\bibtitleauthorprogram}{Зарегистрированные программы для ЭВМ}
+
+% для стиля библиографии `\insertbiblioauthorimportant`:
+\newcommand{\bibtitleauthorimportant}{Наиболее значимые \protect\MakeLowercase\bibtitleauthor}
+
+% для списка литературы в диссертации и списка чужих работ в автореферате:
+%\newcommand{\bibtitlefull}{Список литературы} % (ГОСТ Р 7.0.11-2011, 4)
+\newcommand{\bibtitlefull}{References} % (ГОСТ Р 7.0.11-2011, 4)

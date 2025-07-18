@@ -1,0 +1,30 @@
+\chapter*{Introduction}                         % Заголовок
+\addcontentsline{toc}{chapter}{Introduction}    % Добавляем его в оглавление
+
+\newcommand{\actuality}{}
+\newcommand{\progress}{}
+\newcommand{\aim}{{\textbf\aimTXT}}
+\newcommand{\tasks}{\textbf{\tasksTXT}}
+\newcommand{\novelty}{\textbf{\noveltyTXT}}
+\newcommand{\influence}{\textbf{\influenceTXT}}
+\newcommand{\methods}{\textbf{\methodsTXT}}
+\newcommand{\defpositions}{\textbf{\defpositionsTXT}}
+\newcommand{\reliability}{\textbf{\reliabilityTXT}}
+\newcommand{\probation}{\textbf{\probationTXT}}
+\newcommand{\contribution}{\textbf{\contributionTXT}}
+\newcommand{\publications}{\textbf{\publicationsTXT}}
+
+\input{common/actuality}
+\input{common/characteristic}
+
+
+\textbf{The volume and structure of the work.} 
+The dissertation consists of~an abstract, introduction,
+\formbytotal{totalchapter}{chapter}{}{s}{},
+conclusions, lists of abbreviations, figures, tables and \formbytotal{totalappendix}{appendix}{}{es}{}.
+The full thesis' volume is
+\formbytotal{TotPages}{page}{}{s}{s}, including
+\formbytotal{totalcount@figure}{figure}{}{s}{} and
+\formbytotal{totalcount@table}{table}{}{s}{}.
+%TODO: из-за костылей с разбиением на ru и eng список литературы, эта штука может неправильно обрабатывать списки. Внимательно проверяйте ее и, при необходимости, проописывайте руками нужное число.
+The list of references consists of \formbytotal{citenum}{source}{}{s}{}.

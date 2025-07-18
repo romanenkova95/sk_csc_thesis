@@ -1,0 +1,51 @@
+\pdfbookmark{General characteristics of the work}{characteristic}             % Закладка pdf
+\section*{\centerline{General characteristics of the work}}
+
+\newcommand{\actuality}{\pdfbookmark[1]{Relevance of the work}{actuality}\underline{\textbf{\actualityTXT}}}
+\newcommand{\aim}{\pdfbookmark[1]{Aim}{aim}\underline{{\textbf\aimTXT}}}
+\newcommand{\tasks}{\pdfbookmark[1]{Tasks}{tasks}\underline{\textbf{\tasksTXT}}}
+\newcommand{\novelty}{\pdfbookmark[1]{Scientific novelty}{novelty}\underline{\textbf{\noveltyTXT}}}
+\newcommand{\influence}{\pdfbookmark[1]{Scientific and practical significance}{influence}\underline{\textbf{\influenceTXT}}}
+\newcommand{\methods}{\pdfbookmark[1]{Research methodology}{methods}\underline{\textbf{\methodsTXT}}}
+\newcommand{\defpositions}{\pdfbookmark[1]{Propositions submitted for the defense}{defpositions}\underline{\textbf{\defpositionsTXT}}}
+\newcommand{\reliability}{\pdfbookmark[1]{Validity and reliability}{reliability}\underline{\textbf{\reliabilityTXT}}}
+\newcommand{\probation}{\pdfbookmark[1]{Approbation of the results}{probation}\underline{\textbf{\probationTXT}}}
+\newcommand{\contribution}{\pdfbookmark[1]{Personal contribution}{contribution}\underline{\textbf{\contributionTXT}}}
+\newcommand{\publications}{\pdfbookmark[1]{Publications}{publications}\underline{\textbf{\publicationsTXT}}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{assumption}{Assumption}
+\input{common/actuality}
+
+
+\input{common/characteristic} % Характеристика работы по структуре во введении и в автореферате не отличается (ГОСТ Р 7.0.11, пункты 5.3.1 и 9.2.1), потому её загружаем из одного и того же внешнего файла, предварительно задав форму выделения некоторым параметрам
+
+%Диссертационная работа была выполнена при поддержке грантов \dots
+
+%\underline{\textbf{Объем и структура работы.}} Диссертация состоит из~введения,
+%четырех глав, заключения и~приложения. Полный объем диссертации
+%\textbf{ХХХ}~страниц текста с~\textbf{ХХ}~рисунками и~5~таблицами. Список
+%литературы содержит \textbf{ХХX}~наименование.
+
+\pdfbookmark{Dissertation Summary}{description}                          % Закладка pdf
+\section*{\centerline{Dissertation Summary}}
+The main content of the synposis. It is better to keep to a number of pages that is a multiple of 4 (for printing brochures). The maximum number of pages if you use this template <<as it is>> is approximately 36 (one and a half author's sheets). 
+
+\pdfbookmark{Conclusion}{concl}
+\section*{\centerline{Conclusion}}
+\input{common/concl}
+
+\ifdefmacro{\microtypesetup}{\microtypesetup{protrusion=false}}{} % не рекомендуется применять пакет микротипографики к автоматически генерируемому списку литературы
+\urlstyle{rm}                               % ссылки URL обычным шрифтом
+\insertbibliofull
+\ifdefmacro{\microtypesetup}{\microtypesetup{protrusion=true}}{}
+\urlstyle{tt}                               % возвращаем установки шрифта ссылок URL
+
+\newpage
+\pdfbookmark{Author's publications on the dissertation topic}{publ}
+\section*{\centerline{Author's publications on the dissertation topic}}
+% The simplest way is to do it manually:) 
+\begin{enumerate}[leftmargin=18pt]
+	\item \textbf{Dissertation's author}, other authors, Paper's title, journal, year, DOI;
+\end{enumerate}

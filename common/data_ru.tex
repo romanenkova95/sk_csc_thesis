@@ -1,0 +1,60 @@
+%%% Основные сведения %%%
+\newcommand{\thesisAuthorLastNameRU}{\fixme{Фамилия}}
+\newcommand{\thesisAuthorOtherNamesRU}{\fixme{Имя Отчество}}
+\newcommand{\thesisAuthorRU}             % Диссертация, ФИО автора
+{%
+	\texorpdfstring{% \texorpdfstring takes two arguments and uses the first for (La)TeX and the second for pdf
+		\thesisAuthorLastNameRU~\thesisAuthorOtherNamesRU% так будет отображаться на титульном листе или в тексте, где будет использоваться переменная
+	}{%
+		\thesisAuthorLastNameRU, \thesisAuthorOtherNamesRU% эта запись для свойств pdf-файла. В таком виде, если pdf будет обработан программами для сбора библиографических сведений, будет правильно представлена фамилия.
+	}
+}
+\newcommand{\thesisTitleRU}              % Диссертация, название
+{\fixme{Тема диссертации}}
+\newcommand{\thesisSpecialtyNumberRU}    % Диссертация, специальность, номер, например 1.2.1.
+{\fixme{1.2.1. }}
+\newcommand{\thesisSpecialtyTitleRU}     % Диссертация, специальность, название (название взято с сайта ВАК для примера)
+{\fixme{Искусственный интеллект и машинное обучение}}
+\newcommand{\thesisDegreeRU}             % Диссертация, ученая степень
+{\fixme{кандидата физико-математических наук}}
+\newcommand{\thesisCityRU}               % Диссертация, город написания диссертации
+{Москва}
+\newcommand{\thesisYearRU}               % Диссертация, год написания диссертации
+{\fixme{\the\year}}
+\newcommand{\thesisOrganizationRU}       % Диссертация, организация
+{Автономная некоммерческая образовательная организация высшего образования <<Сколковский институт науки и технологий>>}
+\newcommand{\thesisOrganizationShortRU}  % Диссертация, краткое название организации для доклада
+{Сколтех}
+
+%TODO: проверьте, что точное название не поменялось
+\newcommand{\thesisInOrganizationRU}     % Диссертация, организация в предложном падеже: Работа выполнена в ...
+{Автономной некоммерческой образователь\-ной организации высшего образования <<Сколковский институт науки и технологий>>}
+
+%% \newcommand{\supervisorDead}{}           % Рисовать рамку вокруг фамилии
+\newcommand{\supervisorFioRU}              % Научный руководитель, ФИО
+{\fixme{Фамилия Имя Отчество}}
+\newcommand{\supervisorRegaliaRU}          % Научный руководитель, регалии
+{\fixme{уч. степень, уч. звание}}
+
+%% \newcommand{\supervisorTwoDead}{}        % Draw a frame around the second supervisor name
+%% \newcommand{\supervisorTwoFioRU}           % Second supervisor (if available), full name
+%% {\fixme{Lastname Name Patronymic}}
+%% \newcommand{\supervisorTwoRegaliaRU}       % Second supervisor (if available), regalia
+%% {\fixme{academic degree, academic rank}}
+
+\newcommand{\defenseDateRU}              % Защита, дата
+{\fixme{\ul{\textbf{DD месяц ГОД~г.~в~XX часов XX минут}}}}
+\newcommand{\defenseCouncilNumberRU}     % Защита, номер диссертационного совета
+{\fixme{\textbf{X.X.X.X.}}}
+\newcommand{\defenseCouncilTitleRU}      % Защита, учреждение диссертационного совета
+{Автономной некоммерческой образовательной организации высшего образования <<Сколковский институт науки и технологий>> (Сколтех)}
+\newcommand{\defenseCouncilAddressRU}    % Защита, адрес учреждение диссертационного совета
+{Территория Инновационного Центра <<Сколково>>, Большой бульвар д.30, стр.1, Москва 121205}
+
+\newcommand{\defenseSecretaryFioRU}      % Секретарь диссертационного совета, ФИО
+{\fixme{Копелевич Григорий Александрович}}
+\newcommand{\defenseSecretaryRegaliaRU}  % Секретарь диссертационного совета, регалии
+{\fixme{к.ф.-м.н.}}            % Для сокращений есть ГОСТы, например: ГОСТ Р 7.0.12-2011 + http://base.garant.ru/179724/#block_30000
+
+\newcommand{\synopsisDateRU}             % Автореферат, дата рассылки
+{<<\underline{\hspace{1cm}}>>\underline{\hspace{3cm}}\fixme{\the\year~года}}
